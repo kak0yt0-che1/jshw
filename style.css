@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#image {
+    width: 600px;
+    height: 300px;
+    line-height: 300px;
+    text-align: center;
+    background-color: lightgray;
+    margin: 20px auto;
+    border: 2px solid black;
+    font-size: 20px;
+    font-weight: bold;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-color 0.3s ease;
+}
+
+/* Добавляем черный фон при наведении */
+#image.hover-effect {
+    background-color: black;
+}
+
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid black;
+    transition: transform 0.2s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
